@@ -44,7 +44,7 @@ pipeline{
 			archiveArtifacts artifacts: '**/TestResult/*.trx', allowEmptyArchive: true
 			step{[
 				$class: 'MSTestPublisher',
-				testResultFile: '**/TestResult/*.trx'
+				junit '**/TestResult/*.trx'
 			]}
 		}
 	}
