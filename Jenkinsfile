@@ -2,25 +2,25 @@ pipeline{
 	agent any
 
 	stages{
-		stage(""){
+		stage("checkout cod"){
 			// checkout the repository	
 			steps{
 				git branch: 'main', url: 'https://github.com/IvoPetrovv/JenkinsSeleniumIDE_Demo_01'
 			}
 		}
-		stage(""){
+		stage("Set up .Net Core"){
 			// install dot net
 
 		}
-		stage(""){
+		stage("Restore dependencies"){
 			// install dependencies
 
 		}
-		stage(""){
+		stage("build"){
 			// build
 
 		}
-		stage(""){
+		stage("run test"){
 			// run test
 
 		}
