@@ -28,13 +28,15 @@ pipeline{
 		stage("build"){
 			// build
 			steps{
-				bat 'dotnet build SeleniumIde.sln -- configuration Release'
+				bat 'dotnet build "SeleniumIde.sln" -- configuration Release'
+				     
 			}
 		}
 		stage("run test"){
 			// run test
 			steps{
 				bat 'dotnet test SeleniumIde.sln --logger "trx;LogFileName=TestResult.trx"'
+				     
 			}
 		}
 	}
