@@ -15,7 +15,7 @@ pipeline{
 				echo Downloading .Net 6 Sdk
 				curl -l -o dotnet-sdk-6.0.132-win-x64.exe https://download.visualstudio.microsoft.com/download/pr/0c82e7e6-fdde-49f2-a69f-bd986aeafe1b/9ea7411a22e661fff0e61e56a466e484/dotnet-sdk-6.0.132-win-x64.exe
 				echo installing dotnet-sdk-6.0.132-win-x64.exe
-				dotnet-sdk-6.0.132-win-x64.exe /quite /norestart
+				dotnet-sdk-6.0.132-win-x64.exe /quiet /norestart
 				'''
 			}
 		}
