@@ -12,10 +12,10 @@ pipeline{
 			// install dot net
 			steps {
 				bat '''
-				echo Downloadind .Net 6 Sdk
-				curl -l -o dotnet-sdk-6.0.132-win-x86.exe https://download.visualstudio.microsoft.com/download/pr/ad59f1d1-5f19-4474-86be-2f09ab195618/5c7a64445dae84e386bb88e1f6ac09e4/dotnet-sdk-6.0.132-win-x86.exe
-				echo installing dotnet-sdk-6.0.132-win-x86.exe
-				dotnet-sdk-6.0.132-win-x86.exe /quite /norestart
+				echo Downloading .Net 6 Sdk
+				curl -l -o dotnet-sdk-6.0.132-win-x64.exe https://download.visualstudio.microsoft.com/download/pr/0c82e7e6-fdde-49f2-a69f-bd986aeafe1b/9ea7411a22e661fff0e61e56a466e484/dotnet-sdk-6.0.132-win-x64.exe
+				echo installing dotnet-sdk-6.0.132-win-x64.exe
+				dotnet-sdk-6.0.132-win-x64.exe /quite /norestart
 				'''
 			}
 		}
