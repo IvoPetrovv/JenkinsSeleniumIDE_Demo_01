@@ -28,7 +28,7 @@ pipeline{
 		stage("build"){
 			// build
 			steps{
-				bat 'dotnet build "SeleniumIde.sln" -- configuration Release'
+				bat 'dotnet msbuild "SeleniumIde.sln" -- configuration Release'
 				     
 			}
 		}
