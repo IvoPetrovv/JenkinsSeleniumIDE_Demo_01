@@ -28,7 +28,7 @@ pipeline{
 		stage("build"){
 			// build
 			steps{
-				bat 'dotnet build SeleniumIde.csproj -- configuration=Release'
+				bat 'dotnet build SeleniumIde.csproj --configuration=Release'
 				     
 			}
 		}
